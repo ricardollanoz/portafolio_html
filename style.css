@@ -1,18 +1,74 @@
 *{
     margin: 0px;
+    padding: 0px;
 }
 
 header{
     background-color: aqua;
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
+    align-items:center;
+    width: 100%;
+    height: auto;
     flex-direction: column;
+    
+}
+header img{
+    position: relative;
+    width: 100%;
+    height: 30vh;
+}
+header div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    margin: 10vh;
+    position: absolute;
+    color: white;
+    font-size: 50px;
+}
+header h1{
+    font-family: "Tiro Kannada", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 50px;
+  
+  
 }
 
-header nav{
+
+
+.nav-links{
     background-color: beige;
+    display: flex;   
+    width: 100%;
+    justify-content: center;
 }
-section{
-    background-color: blue;
+header nav ul{
+    display: flex;
+    list-style-type: none;
+    gap:50px;
+    
+}
+.nav-links ul li a{
+    text-decoration: none;
+     font-family: "Tiro Kannada", serif;
+  font-weight: 400;
+  font-style: italic;
+  color:rgb(0, 0, 0)
+}
+    
+.contenedor{
+    min-height: 100vh;
+    background-color: rgb(123, 122, 189);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+footer{
+    background-color: blueviolet;
+    height: auto;
 }
