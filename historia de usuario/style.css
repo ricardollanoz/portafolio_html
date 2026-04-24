@@ -1,14 +1,14 @@
 *{
     margin: 0px;
     padding: 0px;
-     font-family: sans-serif
+     font-family: sans-serif;
     
     
 }
 
 header{
     height: 70px;
-    background: #07112e; /*ajusta el tamaño de los laterales*/
+    background: #07112e; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,12 +45,22 @@ header{
     
 }
 
+#btn-show {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
 
 .seccion-heroe {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
+
 
 /* IMAGEN */
 #banner {
@@ -339,20 +349,45 @@ footer{
     color: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
 
     /* MENU EN COLUMNA */
-    .menu {
+    header {
         flex-direction: column;
         align-items: center;
-        gap: 15px;
         margin-right: 0;
+        height: 30vh;
+    }
+    #btn-show { display: block; } /* Muestra el botón en móvil */
+
+    .menu {
+        display: none; /* Oculto por defecto en móvil */
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        background: #07112e;
+       
+    }
+
+    .menu.active {
+        display: flex; /* Se muestra cuando tiene la clase 'active' */
+    }
+
+
+    .seccion-heroe {
+        flex-direction: column;
+        height: auto;
+    }
+    #banner {
+        height: 70vh;
     }
 
     /* HERO TEXTO CENTRADO */
     .contenido-banner {
         position: absolute;
-        top: 50%;
+        top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -363,7 +398,7 @@ footer{
         justify-content: center;
         flex-wrap: wrap;
     }
-
+    
     /* SOBRE MI EN COLUMNA */
     .sobre-mi {
         flex-direction: column;
@@ -382,5 +417,61 @@ footer{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
+    }
+    .contacto{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contacto img{
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    /* Ajuste del Header */
+    .menu {
+        margin-right: 30px; /* Reduce el margen lateral */
+    }
+
+    /* Hero Section: Texto un poco más pequeño para que quepa bien */
+    .nombre-style {
+        font-size: 50px;
+    }
+
+    /* Sobre Mí: Ajuste de proporciones */
+    .sobre-mi {
+        height: auto;
+        padding: 40px;
+        gap: 5%;
+    }
+    
+    .sobre-mi img {
+        height: 30vh; /* Imagen más pequeña para dejar espacio al texto */
+    }
+
+    /* PROYECTOS EN 2 COLUMNAS */
+    .grid-proyectos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    /* Contacto: Imagen y formulario */
+    .contacto {
+        flex-direction: row; /* Mantiene el orden horizontal pero con menos gap */
+        gap: 20px;
+        padding: 40px 5%;
+    }
+
+    .contacto img {
+        height: 50vh; /* Reduce el tamaño de la imagen */
+        width: auto;
+    }
+    
+    .formulario {
+        width: 100%;
     }
 }

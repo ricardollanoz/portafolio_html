@@ -11,8 +11,11 @@
     </head>
     <body>
         <header>
-             <img src="img/logo.png" alt="" class="logo">
-             <nav class="menu">
+             <img src="img/logo.png" alt="logo" class="logo">
+             <!-- BOTON PARA DESPLEGAR EL MENU EN MOVIL -->
+             <button id="btn-show" onclick="hiddenHamburguer()">≡ Desplegar menu</button> 
+             <nav class="menu" id="nav-menu">
+                
                 <a href="#">ACERCA DE MI</a>
                 <a href="#">PROYECTOS</a>
                 <a href="mascotas.html">MASCOTAS</a>
@@ -29,14 +32,14 @@
 
                 <!-- BOTONES DENTRO DEL CONTENIDO -->
                 <div class="contenedor-btns">
-                    <a href="#" class="btn github">GitHub</a>
-                    <a href="#" class="btn linkedin">LinkedIn</a>
+                    <a href="https://github.com/ricardollanoz" class="btn github">GitHub</a>
+                    <a href="https://www.linkedin.com/in/ricardollanosalvarez/?original_referer=" class="btn linkedin">LinkedIn</a>
                 </div>
             </div>
-        </section>
+        </section>  <!-- CUERPO PRINCIPAL -->
         <main class="contenedor-main">
             <section class="sobre-mi">
-                <img src="img/fotoricardo.png" alt="">
+                <img src="img/fotoricardo.png" alt="Foto principal de Ricardo Llanos">
                 <div>
                 <H1>Sobre mi</H1>
                 <p>Economista con experiencia en atención al cliente y gestión de centros de llamadas. 
@@ -46,40 +49,42 @@
                     mi capacidad analítica, mi atención al detalle y mi comunicación eficaz con los equipos internos.</p>
                 </div>
                 </section>
+                <!-- MOSAICO DE PROYECTOS -->
             <section class="proyectos">
                 <h2>Proyectos</h2>
 
                 <div class="grid-proyectos">
                     
                     <div class="card">
-                        <img src="img/zoo.png" alt="">
+                        <img src="img/zoo.png" alt="logo del proyecto">
                         <h3>Zoobaq</h3>
                         <p>Plataforma web del zoologico de Barranquilla.</p>
-                        <a href="#">Ver proyecto →</a>
+                        <a href="https://github.com/ricardollanoz/html_css_udemy/tree/master/seccion02">Ver proyecto →</a>
                     </div>
 
                     <div class="card">
-                        <img src="img/ventas.png" alt="">
+                        <img src="img/ventas.png" alt="logo del proyecto">
                         <h3>Registro de ventas</h3>
                         <p>Sistema para administrar ventas y base de datos.</p>
-                        <a href="#">Ver proyecto →</a>
+                        <a href="https://github.com/ricardollanoz/sales_record_project">Ver proyecto →</a>
                     </div>
 
                     <div class="card">
-                        <img src="img/conocimiento.png" alt="">
+                        <img src="img/conocimiento.png" alt="logo del proyecto">
                         <h3>Sistema escolar</h3>
                         <p>Gestión de estudiantes, cursos y matriculas.</p>
-                        <a href="#">Ver proyecto →</a>
+                        <a href="https://github.com/ricardollanoz/managment">Ver proyecto →</a>
                     </div>
 
                 </div>
+                <!-- FORMULARIO DE CONTACTO -->
             </section>
             <section class="contacto">
-                <img src="img/fotoricardo1.png" alt="">
+                <img src="img/fotoricardo1.png" alt="Foto de contacto de Ricardo Llanos">
                 <div>
                 <h2>Contactame</h2>
 
-                <form action="/submit" method="post" class="formulario">
+                <form action="/submit" method="post" class="formulario" id="mi-formulario">
 
                     <div class="campo">
                         <label for="name">Nombre</label>
@@ -96,13 +101,15 @@
                         <textarea id="mensaje" name="mensaje" rows="10" placeholder="Escribe..."></textarea>
                     </div>
 
-                    <button type="submit" class="btn-enviar">Enviar mensaje</button>
+                    <button type="submit" class="btn-enviar" id="mensaje-exitoso">Enviar mensaje</button>
                 </form>
                 </div>
+                
             </section>
         </main>
         <footer>
             <p>Todos los derechos son reservados</p>
         </footer>
+        <script src="main.js"></script>
     </body>
 </html>
