@@ -1,0 +1,386 @@
+*{
+    margin: 0px;
+    padding: 0px;
+     font-family: sans-serif
+    
+    
+}
+
+header{
+    height: 70px;
+    background: #07112e; /*ajusta el tamaño de los laterales*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(121, 121, 121, 0.247);
+
+}
+.logo{
+     max-height: 120px; /* Ajusta la altura máxima para que sea responsivo */
+    width: auto; /* Mantiene la proporción */
+    margin: 0 30px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #425564;
+    margin-right: 100px ;
+}
+
+.menu a{
+    color: #e0e0e0;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+    font-weight: 600;
+}
+
+.menu a:hover {
+    color: #016ed4;
+    transform: translateY(-2px);
+
+
+    
+}
+
+
+.seccion-heroe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* IMAGEN */
+#banner {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+
+/* CONTENIDO ENCIMA DEL BANNER */
+.contenido-banner {
+    position: absolute;
+    top: 40%;
+    left: 7%;
+    
+    color: white;
+}
+
+/* NOMBRE */
+.nombre-style {
+    color: #38BDF8;
+    font-size: 70px;
+}
+
+/* TEXTO */
+.contenido-banner p {
+    margin-top: 20px;
+}
+.contenido-banner p span{
+    color: #38BDF8;
+}
+
+/* BOTONES */
+.contenedor-btns {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+/* ESTILO BASE */
+.btn {
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* GITHUB */
+.github {
+    background: #1E293B;
+    color: white;
+}
+
+.github:hover {
+    background: #38BDF8;
+}
+
+/* LINKEDIN */
+.linkedin {
+     background: #1E293B;
+    color: white;
+}
+
+.linkedin:hover {
+    background: #38BDF8;
+}
+
+/* SECCION SOBRE MI */
+
+.sobre-mi{
+    display: flex;
+    height:60vh ;
+    width: auto;
+    background-color: rgb(241, 241, 241);
+    padding: 0 60px;
+    gap: 10%;
+    align-items: center;
+    justify-content: center;
+    border: #00407cea solid 10px;
+    
+}
+.sobre-mi img{
+    height: 40vh;
+    width: auto;
+    border-radius: 50px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 110, 255, 0.3);
+}
+
+.sobre-mi div h1{
+    color: #016ed4;
+    font-size: 2.5rem;
+    
+}
+.sobre-mi div p{
+    font-weight: 600;
+}
+
+
+/* PROYECTOS */
+.proyectos {
+    padding: 60px 10%;
+    background: #0F172A;
+    color: #F8FAFC;
+    text-align: center;
+}
+
+.proyectos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+/* GRID */
+.grid-proyectos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* TARJETAS */
+.card {
+    background: #1E293B;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+/* HOVER */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* TITULO */
+.card h3 {
+    margin-bottom: 10px;
+    color: #38BDF8;
+}
+
+/* TEXTO */
+.card img{
+    height: 10vh;
+}
+.card p {
+    margin-bottom: 15px;
+    color: #CBD5F5;
+}
+
+/* LINK */
+.card a {
+    color: #38BDF8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+.contacto {
+    padding: 60px 10%;
+    background: #0F172A;
+    color: #217dda;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.contacto img{
+    height: 80vh;
+    width: auto;
+    border-radius: 10px;
+    
+}
+
+.contacto h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    
+}
+.contacto div{
+    display: flex;
+    flex-direction: column;
+}
+
+/* FORM */
+.formulario {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* CAMPOS */
+.campo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+/* LABEL */
+.campo label {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+
+.btn-enviar {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #38BDF8;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* HOVER */
+.btn-enviar:hover {
+    background: #0ea5e9;
+}
+
+/* FORMULARIO */
+.contacto {
+    padding: 30px 5%;
+    background: rgb(223, 223, 223);
+}
+   
+
+.contacto h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #38BDF8;
+}
+
+/* FORM */
+.formulario {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #38BDF8;
+}
+
+/* CAMPOS */
+.campo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+/* LABEL */
+.campo label {
+    margin-bottom: 5px;
+    font-weight: 900;
+}
+
+
+/* BOTÓN */
+.btn-enviar {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #38BDF8;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* HOVER */
+.btn-enviar:hover {
+    background: #0ea5e9;
+}
+
+/* FOOTER */
+
+footer{
+    text-align: center;
+    padding-top: 10px;
+    height: 10vh;
+    width: auto;
+    background-color: #07112e;
+    color: white;
+}
+
+@media (max-width: 768px) {
+
+    /* MENU EN COLUMNA */
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-right: 0;
+    }
+
+    /* HERO TEXTO CENTRADO */
+    .contenido-banner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    /* BOTONES CENTRADOS */
+    .contenedor-btns {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* SOBRE MI EN COLUMNA */
+    .sobre-mi {
+        flex-direction: column;
+        height: auto;
+        padding: 30px;
+        text-align: center;
+    }
+
+    /* PROYECTOS 1 COLUMNA */
+    .grid-proyectos {
+        grid-template-columns: 1fr;
+    }
+
+    /* GALERÍA (si tienes una) */
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}

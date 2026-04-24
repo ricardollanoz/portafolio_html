@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ricardo Llanos</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tiro+Kannada:ital@0;1&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+             <img src="img/logo.png" alt="" class="logo">
+             <nav class="menu">
+                <a href="#">ACERCA DE MI</a>
+                <a href="#">PROYECTOS</a>
+                <a href="mascotas.html">MASCOTAS</a>
+                <a href="#">CONTACTO</a>
+             </nav>    
+        </header>
+        
+        <section class="seccion-heroe">
+            <img src="img/banner.png" alt="" id="banner">
+
+            <div class="contenido-banner">
+                <h1>Hi, I'm <br><span class="nombre-style">Ricardo Llanos</span></h1>
+                <p>ECONOMISTA <span>|</span> DEVELOPER IN TRAINING <span>|</span> ANALISTA DE DATOS</p>
+
+                <!-- BOTONES DENTRO DEL CONTENIDO -->
+                <div class="contenedor-btns">
+                    <a href="#" class="btn github">GitHub</a>
+                    <a href="#" class="btn linkedin">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+        <main class="contenedor-main">
+            <section class="sobre-mi">
+                <img src="img/fotoricardo.png" alt="">
+                <div>
+                <H1>Sobre mi</H1>
+                <p>Economista con experiencia en atención al cliente y gestión de centros de llamadas. 
+                    Experto en atender consultas de clientes, proporcionar información precisa y resolver problemas  
+                    de manera eficiente. Poseo excelentes habilidades de comunicación, soy meticuloso y tengo experiencia 
+                    en el uso de Excel para tareas operativas. Me caracterizo por mi motivación por el aprendizaje continuo, 
+                    mi capacidad analítica, mi atención al detalle y mi comunicación eficaz con los equipos internos.</p>
+                </div>
+                </section>
+            <section class="proyectos">
+                <h2>Proyectos</h2>
+
+                <div class="grid-proyectos">
+                    
+                    <div class="card">
+                        <img src="img/zoo.png" alt="">
+                        <h3>Zoobaq</h3>
+                        <p>Plataforma web del zoologico de Barranquilla.</p>
+                        <a href="#">Ver proyecto →</a>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/ventas.png" alt="">
+                        <h3>Registro de ventas</h3>
+                        <p>Sistema para administrar ventas y base de datos.</p>
+                        <a href="#">Ver proyecto →</a>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/conocimiento.png" alt="">
+                        <h3>Sistema escolar</h3>
+                        <p>Gestión de estudiantes, cursos y matriculas.</p>
+                        <a href="#">Ver proyecto →</a>
+                    </div>
+
+                </div>
+            </section>
+            <section class="contacto">
+                <img src="img/fotoricardo1.png" alt="">
+                <div>
+                <h2>Contactame</h2>
+
+                <form action="/submit" method="post" class="formulario">
+
+                    <div class="campo">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" placeholder="Escribe tu nombre..." required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Correo de contacto..." required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="10" placeholder="Escribe..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">Enviar mensaje</button>
+                </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Todos los derechos son reservados</p>
+        </footer>
+    </body>
+</html>
